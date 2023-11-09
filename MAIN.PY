@@ -57,3 +57,4 @@ def q12():
             print(i)
 
     display_person(name="Emma", age="25")
+    
