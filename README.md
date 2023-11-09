@@ -1,4 +1,4 @@
 # STUST_Python_2023
  
-## QUIZ ONG
-    ![quiz](./QUIZ.PNG)
+## QUIZ PNG
+    [quiz](./QUIZ.PNG)
