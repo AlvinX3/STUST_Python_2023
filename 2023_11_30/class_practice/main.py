@@ -1,6 +1,9 @@
 class Student:
     
-    def __init__(self, school, major, student_id, grade, point, GPA, student_addr, school_addr):
+    ### 屬性類別 (常用的東西 可以避免重複輸入)
+    school_addr = "stust.edu.com"
+
+    def __init__(self, school, major, student_id, grade, point, GPA,student_addr):
         self.school =school
         self.major =major
         self.student_id =student_id
@@ -8,7 +11,6 @@ class Student:
         self.point =point
         self.GPA =GPA
         self.student_addr = student_addr
-        self.school_addr = school_addr
 
     def set_school_name(self,school_name):
         self.school = school_name
@@ -67,8 +69,9 @@ class Student:
         print("School address: " + str(self.school_addr))
 
 
-st1 = Student("stust","csie","4b0g0123","3","200","A","xxx.student.xxx","https://www.stust.edu.tw/")
+st1 = Student("stust","csie","4b0g0123","3","200","A","xxx.st1.xxx")
 
 st1.set_GPA("F")
 st1.get_GPA()
 
+st1.get_school_addr()
