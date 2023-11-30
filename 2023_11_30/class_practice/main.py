@@ -1,10 +1,11 @@
 class Student:
     
-    ### 屬性類別 (常用的東西 可以避免重複輸入)
+    ### 類別屬性(Class Attribute) (常用的東西 可以避免重複輸入)
+    school = "stust"
     school_addr = "stust.edu.com"
 
-    def __init__(self, school, major, student_id, grade, point, GPA,student_addr):
-        self.school =school
+    ### 實體屬性(instnce Attribute)
+    def __init__(self,  major, student_id, grade, point, GPA,student_addr):
         self.major =major
         self.student_id =student_id
         self.grade =grade
@@ -69,9 +70,10 @@ class Student:
         print("School address: " + str(self.school_addr))
 
 
-st1 = Student("stust","csie","4b0g0123","3","200","A","xxx.st1.xxx")
-
-st1.set_GPA("F")
-st1.get_GPA()
+st1 = Student("csie","4b0g0123","3","200","A","xxx.st1.xxx")
 
 st1.get_school_addr()
+
+st2 = Student("csie","4b0g0456","3","200","c","xxx.st2.xxx")
+
+st2.get_school_addr()
