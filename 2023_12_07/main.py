@@ -39,6 +39,10 @@ class Sports:
         print(f'"{self.name}" was delete.')
         del self.name
 
+    def practice(self):
+        return "Doing " + str(self.name) + " practice."
+        
+
 class Land_Sports(Sports):
     def __init__(self,name , feild):
         super().__init__(name)
@@ -47,7 +51,9 @@ class Land_Sports(Sports):
     @property
     def Land_Sports_feild(self):
         return self.feild
-    
+
+    def practice(self):
+        return "Doing " + str(self.name) + " practice in " + str(self.feild) + "."
 
 class Water_Sprots(Sports):
     def __init__(self,name , activity):
@@ -57,6 +63,9 @@ class Water_Sprots(Sports):
     @property
     def Land_Sports_activity(self):
         return self.activity
+    
+    def practice(self):
+        return "Doing " + str(self.name) + " practice in " + str(self.feild) + "."
 
 if __name__ == '__main__':
     # ----  using getters & setters ----
@@ -73,7 +82,11 @@ if __name__ == '__main__':
     baseball = Land_Sports("baseball", "baseball field")
     print(baseball.sport_name)
     print(baseball.feild)
+    print(baseball.practice())
+    
 
     swim = Land_Sports("swim", "pool")
     print(swim.sport_name)
     print(swim.feild)
+    print(swim.practice())
+
