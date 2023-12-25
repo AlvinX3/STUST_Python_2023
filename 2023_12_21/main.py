@@ -42,7 +42,7 @@ def admins():
 
         elif choice == "2":
             print("[1] Add student's major\n[2] Delect student's major\n[3] exit\n")
-
+            choice = input("choose:")
             student_id = input("student ID:")
 
             if choice == "1":
@@ -67,10 +67,16 @@ def admins():
                 print(f"Student {student_id}'s major: {major}.\n")
             else:
                 print(f"Can't found {student_id}'s major.\n")
+        
+        elif choice == "4":
+            print("Sign out")
+            break
+
 
 def login():
     user = input("userName(student ID): ")
     pwd = input("password: ")
+    
     return user, pwd
 
 if __name__ == '__main__':
